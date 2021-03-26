@@ -1,0 +1,124 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>San Joaquin Valley Town Hall</title>
+	<link rel="shortcut icon" href="https://mcm53.github.io/A09/images/town_hall_logo.gif">
+	<link rel="stylesheet" href="c10.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<img src="https://mcm53.github.io/A09/images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+		<h2>San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our 75<sup>th</sup> Year</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="sampson.html" class="current">Home</a></li>
+			<li><a href="sampson.html">Speakers</a></li>
+			<li><a href="sampson.html">Luncheons</a></li>
+			<li><a href="sampson.html">Tickets</a></li>
+			<li><a href="sampson.html">About Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<form name="checkbook" action="" method="post">
+				<fieldset>
+					<legend>Member Information</legend>
+					<br />
+					<p>
+						Email:
+						<input type="email" required />
+					</p>
+					<p>
+						First Name:
+						<input type="text" id="fname" autofocus />
+					</p>
+					<p>
+						Last Name:
+						<input type="text" id="lname"/>
+					</p>
+					<p>
+						Address:
+						<input type="text" id="add" />
+					</p>
+					<p>
+						City:
+						<input type="text" id="city" />
+					</p>
+					<p>
+						State:
+						<input type="text" id="state" maxlength="2" placeholder="2-character code" />
+					</p>
+					<p>
+						Code:
+						<input type="text" pattern="\d{5}([\-]\d{4})?" placeholder="3 or 9 digits" required/>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Ordering Information</legend>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Payment Method</legend>
+					<br />
+					<p>
+						<input name="select" type="radio" id="radio1" value="thin">Bill Me
+					</p>
+					<p>
+						<input name="select" type="radio" id="radio2" value="thin" checked>Credit Card
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Credit Card Information</legend>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Submit Your Order</legend>
+					<br />
+					<p>
+						<input type="submit" id="submit" value="Submit">
+					</p>
+				</fieldset>
+
+			</form>
+		</section>
+		<aside>
+			<h2>Guest speakers</h2>
+			<div id="speakers">
+				<h3>October<br><a href="sampson.html">Jeffrey Toobin</a></h3>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Jeffrey_toobin_2012.jpg" width="50">
+				<h3>November<br><a href="sampson.html">Andrew Ross Sorkin</a></h3>
+				<img src="data:image/jpeg;base64,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"
+					 width="50">
+				<h3>January<br><a href="sampson.html">Amy Chua</a></h3>
+				<img src="https://images.squarespace-cdn.com/content/v1/5a0f42df18b27d7cc2cde6f0/1511227671356-P6Q0EIIUJHHBU7SDACDD/ke17ZwdGBToddI8pDm48kDxFORUPjOSW6c-cP3XkRCBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvz3I3vIGJoddebuiX4n_B-Q4A770SUh9C7gJ7T_l9ONmKwjaMtYVeumapl0oo2JA/Author_Photo.png"
+					 width="50">
+				<h3>February<br><a href="sampson.html">Scott Sampson</a></h3>
+				<img src="http://static1.squarespace.com/static/537e88a6e4b078fc56661bfc/5436ded6e4b0e78dea90004f/55020944e4b0878db9106cfc/1494253313358/?format=1500w"
+					 width="60">
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>
